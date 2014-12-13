@@ -18,7 +18,14 @@ int main(){
 ```
 That's a pretty boring idea as theres nothing actually DONE with the information, but it at least shows the basic implementation.
 
-Now maps are by default ordered, but there also exists the unordered version which has a faster access time considering you know the key but searching through it is slow.
+Now maps are by default ordered, but there also exists the unordered version
+ which has a faster access time considering you know the key but searching
+  through it is slow. Unordered maps are implemented through the use of 
+  hash tables to allow said fast access time. Creating your own `hash<Key>` 
+  function is also allowed if you so desire. The interesting part of 
+  unordered maps is that they implement the bucket style hash table
+  where each hashed value is allowed to contain more than one piece of data.
+  
 
 ##Lists
 Linked lists are made up of nodes containing the data and a pointer
