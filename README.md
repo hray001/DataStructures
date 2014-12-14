@@ -10,7 +10,7 @@ ta Structures**
 
 2. [Map](#map)
 
-3. [List](#list)
+3. [List](#lists)
 
 4. [Stack](#stack)
 
@@ -37,7 +37,6 @@ A map is a container filled with Pairs made out of a Key, used to reference/retr
   map of int values which referenced some data of type string. Basically, at each index of the `map (m[int])` you would have a string value.
 
 ```
-
 #include <map>
 using namespace std;
 int main(){
@@ -58,7 +57,6 @@ Now maps, by default, are ordered. There also exists the unordered version which
 Linked lists are made up of nodes containing the data and a pointer to the next position in the list. This gives lists an advantage over vectors when inserting and deleting since it only requires changing the pointers as opposed to shifting the entire vector over. It should be mentioned as well that a list maintains an advantage over vectors in that vector expansion is costly while lists only need to dynamically allocate a new node. What you lose for this advantage is the ability of random access, making it slow to search through the list. To create a list, you need only to deal with your desired data types.
 
 ```
-
 #include <list>
 using namespace std;
 int main(){
@@ -83,7 +81,6 @@ The default linked list is a doubly linked list (it contains pointers to the pre
 Stacks are interesting in that they only deal with the top of the structure. You either push to the top or pop off the top. A good example of an easy stack implementation is using it to reverse something. When you push, say a set of strings, to the stack after popping all of the elements off of the stack, the sentence of strings would be in reverse.
 
 ```
-
 #include <stack>
 using namespace std;
 int main(){
@@ -112,7 +109,6 @@ Stacks are used mostly in compilers and operating systems. If that type of thing
 Queues can be thought of as a tunnel. What goes into the tunnel first is going to be the first thing to come out of the tunnel. The most common use of this is for job scheduling (just think of a login queue for a game. Those who enter the queue first are those who get logged in first). Just like a stack, the main two operations for a queue are push and pop. You could use this in the case where you had a set of operations you wanted to execute sequentially. By putting them into a queue and just operating on the item popped off the queue you could iterate through said operations.
 
 ```
-
 #include <queue>
 using namespace std;
 int main(){
@@ -138,7 +134,6 @@ There also exist priority queues (still `#include <queue>` but declared as `prio
 Vectors are the go-to answer whenever a simple array is needed but the size is not known at initialization. Internally, a vector is a dynamically allocated array that reallocates more memory when a new element is pushed but requires more space. As stated above in the "List" section, vectors perform efficiently with random access but inefficiently when inserting or removing items. One thing to note with vectors are their ability to change their size or capacity. Capacity refers to the amount of memory allocated to the array; size refers to the number of elements in the vector. Vectors are nice in their simplicity and that they cover the basic needs of many situations.
 
 ```
-
 #include <vector>    //vector example is a bit too easy, just treat it as
 using namespace std; //an array you can resize and check if you reference
 int main(){          //an out of bounds item
@@ -151,7 +146,7 @@ int main(){          //an out of bounds item
 }
 ```
 
-However, vectors can be overused when you rely on them too heavily. For example, I have been in the situation where I thought I needed a `vector<vector<string>>`. What I really wanted to do, however, was map `int` values to said `vector<string>`. Getting too caught up with vectors, I confused myself and overcomplicated things by trying to force something simple into something complex. Simple solutions should be preferred over complex solutions.
+However, vectors can be overused when you rely on them too heavily. For example, I have been in the situation where I thought I needed a `vector<vector<string> >`. What I really wanted to do, however, was map `int` values to said `vector<string>`. Getting too caught up with vectors, I confused myself and overcomplicated things by trying to force something simple into something complex. Simple solutions should be preferred over complex solutions.
 
 ### Readings
 
