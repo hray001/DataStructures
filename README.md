@@ -91,7 +91,8 @@ int main(){
 ```
 The default linked list is a doubly linked list (it contains pointers to the previous node as well as the next). If you want a singly linked list then use stl `<forward_list>`.
 
-###Stack (First In Last Out)
+###Stack
+(First In Last Out)  
 Stacks are interesting in that they only deal with the top of the structure.
  You either push to the top, or pop off the top. A good example of a stack is
  using it to reverse something. When you push, say a string, to the stack after 
@@ -118,7 +119,8 @@ int main(){
 Stacks are used mostly in compilers and operating systems so if that type of 
 thing is your interest, it would be useful to be used to visualizing a stack.
 
-###Queue (First In First Out)
+###Queue
+(First In First Out)  
 Queues can be thought of as a tunnel, what goes into the tunnel first is going 
 to be the first thing to come out of the tunnel. The most common use of this 
 is for job scheduling (just think of a login queue for a game, those who enter 
