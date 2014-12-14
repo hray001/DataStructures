@@ -3,14 +3,14 @@
 [Original] (https://github.com/hray001/DataStructures)
 
 ##Table of Contents
-1. [Purpose] (#Purpose)
+1. [Purpose] (#purpose)
 2. [TL;DR] (#TL;DR)
-3. [Map] (#Map)
-4. [List] (#Lists)
-5. [Stack] (#Stack First In Last Out )
-6. [Queue] (#Queue Last In First Out)
-7. [Vector] (#Vector)
-8. [Some Useful Things To Read] (#Readings)
+3. [Map] (#map)
+4. [List] (#lists)
+5. [Stack] (#stack-First-In-Last-Out )
+6. [Queue] (queue-last-in-first-out)
+7. [Vector] (#vector)
+8. [Some Useful Things To Read] (#readings)
 
 ##Purpose
 Coming out of cs14 you have been hammered with data structures against your 
