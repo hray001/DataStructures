@@ -16,14 +16,14 @@ only a few of the boost packages are installed automatically on linux and
 the lab machines do not contain a lot of the ones you would need to use 
 the BOOST versions of these structures. 
 
-    TL;DR: Maps are useful, REALLY useful and your professor will attest to 
+*TL;DR: Maps are useful, REALLY useful and your professor will attest to 
 their use. Stacks and Queues are less common but in certain situations they 
 make your job immensely easier and reign supreme. Yes, lists can be a 
 pain to deal with if you hate pointers, but if you get comfortable using 
 pointers and the rules associated with them they become another tool you 
 will have at your disposal. 
 Don't rely only on arrays and vectors just because you're used to them, 
-sometimes they aren't the answer you're looking for. 
+sometimes they aren't the answer you're looking for.* 
 
 ##Map
 A map is a container filled with Pairs made out of a Key, used to reference/retrieve data, and the actual data itself. An important piece of information to remember about maps is that they are sorted by design as you add to them based off the map's comparison object. To create a map you must decide what you want to store, and how you wish to reference that data. If your `pair<const Key, data_type data>` was `pair<int, string>` you would have a map of `int` values which referenced some data of type `string`. Basically at each index of the map (`m[int]`) you would have a string value.
