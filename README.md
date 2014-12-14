@@ -1,6 +1,3 @@
-
-[Original](https://github.com/hray001/DataStructures)
-
 ## Table of Contents
 
 1. [Purpose](#purpose)
