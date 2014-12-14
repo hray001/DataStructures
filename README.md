@@ -66,9 +66,13 @@ Linked lists are made up of nodes containing the data and a pointer
 #include <list>
 using namespace std;
 int main(){
-    list<int> l(0,100); //list from 0-100
-    l.push_back(101) //same style of insertion as vector, you deal with
-                     //pushing and popping element
+    list<int> l; //list from 0-99
+    for(int i = 0; i < 100; i++) l.push_back(i);
+    //same style of insertion as vector, you deal with 
+    //pushing and popping element
+    for(list<int>::const_iterator it = l.begin; it != l.end(); ++it)
+        cout << *it << " "; //act on the object in the list
+    cout << endl;
     return 0;
 }
 ```
@@ -83,10 +87,18 @@ Stacks are interesting in that they only deal with the top of the structure.
 #include <stack>
 using namespace std;
 int main(){
-    stack<char> rev;
-    string str = "hello world", rts = "";
-    for(unsigned i = 0; i < str.size(); ++i) rev.push(str[i]);
-    while(!rev.empty()) rts += rev.pop();
+    stack<int> rev;
+    unsigned i;
+    int arr[10];
+    for(i = 0; i < 10; ++i) rev.push(i);
+    i = 0; 
+    while(!rev.empty()){
+        arr[i] = rev.top(); //just to show the order the items come off the stack
+        rev.pop();
+        ++i;
+    }
+    //can then do something with your reversed items, or you could have 
+    //done something with them immediately as you popped them off the top
     return 0;
 }
 ```
@@ -114,7 +126,8 @@ int main(){
     }
     while(!q.empty()){
         //execute starting with the first entry pushed
-        /*execute( */ q.pop() /* ) */ ;
+        /*execute( */ q.front() /* ) */ ;
+        q.pop();
     }
     return 0;
 }
@@ -143,9 +156,9 @@ array while the size refers to number of elements in the vector. Vectors
 are nice in their simplicity and that they cover the basic needs of 
 many situations.
 ```
-#include <vector>
-using namespace std;
-int main(){
+#include <vector>    //vector example is a bit too easy, just treat it as
+using namespace std; //an array you can resize and check if you reference
+int main(){          //an out of bounds item
     vector<int> v;
     return 0;
 }
