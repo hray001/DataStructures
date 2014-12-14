@@ -200,3 +200,10 @@ simple into something complex when I did not need to. Simple solutions should
 [Use of data structures in your life?] (http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
 
 [Interesting lesser known data structures] (http://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures?rq=1)
+
+#####Note
+If you're wondering why trees and heaps aren't covered it is because they 
+are used within the Map and Priority_Queue classes respectively. If you 
+would like to see an example of a tree and/or heap there is example code 
+within the 3rd reading "Nice basic tutorial" at the section "examples 
+from the textbook". 
