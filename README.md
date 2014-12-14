@@ -1,13 +1,13 @@
 Data Structures
 ===
 ##Purpose
-Coming out of cs14 you have been hammered with data structures against your 
+    Coming out of cs14 you have been hammered with data structures against your 
 will and hearing more about them is probably the last thing you want, but 
 it is important to remember that they exist for a purpose and if you ignore 
 their existence because you are fed up with them, you'll regret it like I 
 did. Hence this simple refresher of a few data structures you might find 
 useful.  
-Many of these data structures exist in the boost library and I would highly 
+    Many of these data structures exist in the boost library and I would highly 
 reccomend getting used to some of the boost features. Boost has some 
 rather obscure data structures that might be exactly what you need one day. 
 The only reason this tutorial does not cater to the BOOST library is that 
@@ -15,7 +15,7 @@ only a few of the boost packages are installed automatically on linux and
 the lab machines do not contain a lot of the ones you would need to use 
 the BOOST versions of these structures. 
 
-TL;DR: Maps are useful, REALLY useful and your professor will attest to 
+    TL;DR: Maps are useful, REALLY useful and your professor will attest to 
 their use. Stacks and Queues are less common but in certain situations they 
 make your job immensely easier and reign supreme. Yes, lists can be a 
 pain to deal with if you hate pointers, but if you get comfortable using 
