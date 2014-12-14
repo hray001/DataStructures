@@ -4,13 +4,13 @@
 
 ##Table of Contents
 1. [Purpose] (#purpose)
-2. [TL;DR] (#TL;DR)
-3. [Map] (#map)
-4. [List] (#lists)
-5. [Stack] (#stack)
-6. [Queue] (#queue)
-7. [Vector] (#vector)
-8. [Some Useful Things To Read] (#readings)
+    - [TL;DR] (#tl;dr)
+2. [Map] (#map)
+3. [List] (#lists)
+4. [Stack] (#stack)
+5. [Queue] (#queue)
+6. [Vector] (#vector)
+7. [Some Useful Things To Read] (#readings)
 
 ##Purpose
 This is meant to be a simple refresher for the data structures you should 
