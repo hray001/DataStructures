@@ -46,15 +46,15 @@ Here is a basic map declaration with an example assignment operation: To put it 
 #include <map>
 using namespace std;
 int main(){
-    map<int, string> m;
-    map[1] = "Jack QWERTY";
-    map[2] = "Jill UIOP";
-    map[3] = "Jeniffer ASDF";
+    map<int, string> m;     //There is a more thorough example for maps 
+    map[1] = "Jack QWERTY"; //in the map directory, this just covers basic
+    map[2] = "Jill UIOP";   //implementation
+    map[3] = "Jan Sto Domingo";
 
     return 0;
 }
 ```
-That's a pretty boring idea as theres nothing actually DONE with the information, but it at least shows the basic implementation.
+That's a pretty boring idea as there is nothing actually DONE with the information, but it at least shows the basic implementation.
 
 Now maps are by default ordered, but there also exists the unordered version
  which has a faster access time considering you know the key but searching
@@ -188,7 +188,11 @@ always preferred to complex solutions.
 
 ###Readings
 [Uses of data structures] (http://stackoverflow.com/questions/1539069/practical-uses-of-different-data-structures)
+
 [Dictionary of all you could hope to know about algorithms and data structures and then some] (http://xlinux.nist.gov/dads//)
+
 [Nice basic tutorial, solid example programs included] (http://www.cs.fsu.edu/~jestes/cop3330/notes/datastruct.html)
+
 [Use of data structures in your life?] (http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
+
 [Interesting lesser known data structures] (http://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures?rq=1)
