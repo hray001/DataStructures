@@ -7,8 +7,8 @@
 2. [TL;DR] (#TL;DR)
 3. [Map] (#map)
 4. [List] (#lists)
-5. [Stack] (#stack-First-In-Last-Out )
-6. [Queue] (queue-last-in-first-out)
+5. [Stack] (#stack)
+6. [Queue] (#queue)
 7. [Vector] (#vector)
 8. [Some Useful Things To Read] (#readings)
 
