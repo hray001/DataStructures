@@ -1,5 +1,29 @@
 Data Structures
 ===
+##Purpose
+Coming out of cs14 you have been hammered with data structures against your 
+will and hearing more about them is probably the last thing you want, but 
+it is important to remember that they exist for a purpose and if you ignore 
+their existence because you are fed up with them, you'll regret it like I 
+did. Hence this simple refresher of a few data structures you might find 
+useful.  
+Many of these data structures exist in the boost library and I would highly 
+reccomend getting used to some of the boost features. Boost has some 
+rather obscure data structures that might be exactly what you need one day. 
+The only reason this tutorial does not cater to the BOOST library is that 
+only a few of the boost packages are installed automatically on linux and 
+the lab machines do not contain a lot of the ones you would need to use 
+the BOOST versions of these structures. 
+
+TL;DR: Maps are useful, REALLY useful and your professor will attest to 
+their use. Stacks and Queues are less common but in certain situations they 
+make your job immensely easier and reign supreme. Yes, lists can be a 
+pain to deal with if you hate pointers, but if you get comfortable using 
+pointers and the rules associated with them they become another tool you 
+will have at your disposal. 
+Don't rely only on arrays and vectors just because you're used to them, 
+sometimes they aren't the answer you're looking for. 
+
 ##Map
 A map is a container filled with Pairs made out of a Key, used to reference/retrieve data, and the actual data itself. An important piece of information to remember about maps is that they are sorted by design as you add to them based off the map's comparison object. To create a map you must decide what you want to store, and how you wish to reference that data. If your `pair<const Key, data_type data>` was `pair<int, string>` you would have a map of `int` values which referenced some data of type `string`. Basically at each index of the map (`m[int]`) you would have a string value.
 
@@ -21,7 +45,7 @@ That's a pretty boring idea as theres nothing actually DONE with the information
 Now maps are by default ordered, but there also exists the unordered version
  which has a faster access time considering you know the key but searching
   through it is slow. Unordered maps are implemented through the use of 
-  hash tables to allow said fast access time. Creating your own `hash<Key>` 
+  hash tables to allow said fast access time. Creating your own `hash<Key>`
   function is also allowed if you so desire. The interesting part of 
   unordered maps is that they implement the bucket style hash table
   where each hashed value is allowed to contain more than one piece of data.
@@ -105,4 +129,30 @@ with the highest priority would be the highest number.
 Just like stacks queues are used in operating systems just more on the side 
 of process scheduling.
 
-##
+##Vector
+Vectors are the goto answer whenever someone thinks they need a simple 
+array but they do not know how large the array will be. Internally a vector 
+is just a dynamically allocated array which is reallocated any time new 
+elements which would push the array out of bounds are entered. As was 
+stated above in the "List" section vectors perform extremely well with 
+random access but perform poorly when inserting or removing items. One 
+thing to note with vectors is the ability to change either the size or 
+compacity. The compacity refers to the amount of memory allocated to the 
+array while the size refers to number of elements in the vector. Vectors 
+are nice in their simplicity and that they cover the basic needs of 
+many situations.
+```
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> v;
+    return 0;
+}
+```
+Vectors can be overused however when you rely on them too heavily. For 
+example I have been in the situation where I thought I needed a 
+`vector< vector<string>`. What I really wanted to do however was map `int` 
+values to said `vector<string>` so getting too caught up in using vectors, 
+I confused myself and overcomplicated things by trying to force something 
+simple into something complex when I did not need to. Simple solutions are 
+always preferred to complex solutions.
