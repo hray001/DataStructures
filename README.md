@@ -1,5 +1,17 @@
-Data Structures
-===
+#Data Structures
+
+[Original] (https://github.com/hray001/DataStructures)
+
+##Table of Contents
+1. [Purpose] (#Purpose)
+2. [TL;DR] (#TL;DR)
+3. [Map] (#Map)
+4. [List] (#Lists)
+5. [Stack] (#Stack First In Last Out )
+6. [Queue] (#Queue Last In First Out)
+7. [Vector] (#Vector)
+8. [Some Useful Things To Read] (#Readings)
+
 ##Purpose
 Coming out of cs14 you have been hammered with data structures against your 
 will and hearing more about them is probably the last thing you want, but 
@@ -16,7 +28,8 @@ only a few of the boost packages are installed automatically on linux and
 the lab machines do not contain a lot of the ones you would need to use 
 the BOOST versions of these structures. 
 
-*TL;DR: Maps are useful, REALLY useful and your professor will attest to 
+####TL;DR:
+*Maps are useful, REALLY useful and your professor will attest to 
 their use. Stacks and Queues are less common but in certain situations they 
 make your job immensely easier and reign supreme. Yes, lists can be a 
 pain to deal with if you hate pointers, but if you get comfortable using 
@@ -25,7 +38,7 @@ will have at your disposal.
 Don't rely only on arrays and vectors just because you're used to them, 
 sometimes they aren't the answer you're looking for.* 
 
-##Map
+###Map
 A map is a container filled with Pairs made out of a Key, used to reference/retrieve data, and the actual data itself. An important piece of information to remember about maps is that they are sorted by design as you add to them based off the map's comparison object. To create a map you must decide what you want to store, and how you wish to reference that data. If your `pair<const Key, data_type data>` was `pair<int, string>` you would have a map of `int` values which referenced some data of type `string`. Basically at each index of the map (`m[int]`) you would have a string value.
 
 Here is a basic map declaration with an example assignment operation: To put it into context lets say this map is set up to contain the weekly rankings for a popularity contest. 
@@ -52,7 +65,7 @@ Now maps are by default ordered, but there also exists the unordered version
   where each hashed value is allowed to contain more than one piece of data.
   
 
-##Lists
+###Lists
 Linked lists are made up of nodes containing the data and a pointer
  to the next position in the list. This gives Lists an advantage
  over vectors when inserting and deleting since it only requires
@@ -78,7 +91,7 @@ int main(){
 ```
 The default linked list is a doubly linked list (it contains pointers to the previous node as well as the next). If you want a singly linked list then use stl `<forward_list>`.
 
-##Stack (First In Last Out)
+###Stack (First In Last Out)
 Stacks are interesting in that they only deal with the top of the structure.
  You either push to the top, or pop off the top. A good example of a stack is
  using it to reverse something. When you push, say a string, to the stack after 
@@ -105,7 +118,7 @@ int main(){
 Stacks are used mostly in compilers and operating systems so if that type of 
 thing is your interest, it would be useful to be used to visualizing a stack.
 
-##Queue (First In First Out)
+###Queue (First In First Out)
 Queues can be thought of as a tunnel, what goes into the tunnel first is going 
 to be the first thing to come out of the tunnel. The most common use of this 
 is for job scheduling (just think of a login queue for a game, those who enter 
@@ -143,7 +156,7 @@ with the highest priority would be the highest number.
 Just like stacks queues are used in operating systems just more on the side 
 of process scheduling.
 
-##Vector
+###Vector
 Vectors are the goto answer whenever someone thinks they need a simple 
 array but they do not know how large the array will be. Internally a vector 
 is just a dynamically allocated array which is reallocated any time new 
@@ -170,3 +183,10 @@ values to said `vector<string>` so getting too caught up in using vectors,
 I confused myself and overcomplicated things by trying to force something 
 simple into something complex when I did not need to. Simple solutions are 
 always preferred to complex solutions.
+
+###Readings
+[Uses of data structures] (http://stackoverflow.com/questions/1539069/practical-uses-of-different-data-structures)
+[Dictionary of all you could hope to know about algorithms and data structures and then some] (http://xlinux.nist.gov/dads//)
+[Nice basic tutorial, solid example programs included] (http://www.cs.fsu.edu/~jestes/cop3330/notes/datastruct.html)
+[Use of data structures in your life?] (http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
+[Interesting lesser known data structures] (http://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures?rq=1)
