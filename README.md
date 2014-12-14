@@ -183,8 +183,8 @@ example I have been in the situation where I thought I needed a
 `vector< vector<string>`. What I really wanted to do however was map `int` 
 values to said `vector<string>` so getting too caught up in using vectors, 
 I confused myself and overcomplicated things by trying to force something 
-simple into something complex when I did not need to. Simple solutions are 
-always preferred to complex solutions.
+simple into something complex when I did not need to. Simple solutions should
+ be preferred to complex solutions.
 
 ###Readings
 [Uses of data structures] (http://stackoverflow.com/questions/1539069/practical-uses-of-different-data-structures)
