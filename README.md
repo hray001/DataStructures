@@ -1,4 +1,3 @@
-ta Structures**
 
 [Original](https://github.com/hray001/DataStructures)
 
