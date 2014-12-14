@@ -4,7 +4,7 @@
 
 ##Table of Contents
 1. [Purpose] (#purpose)
-    - [TL;DR] (#tl;dr)
+    - [TL;DR] (#tldr)
 2. [Map] (#map)
 3. [List] (#lists)
 4. [Stack] (#stack)
