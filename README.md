@@ -13,15 +13,19 @@
 8. [Some Useful Things To Read] (#readings)
 
 ##Purpose
-Coming out of cs14 you have been hammered with data structures against your 
-will and hearing more about them is probably the last thing you want, but 
-it is important to remember that they exist for a purpose and if you ignore 
-their existence because you are fed up with them, you'll regret it like I 
-did. Hence this simple refresher of a few data structures you might find 
-useful.  
+This is meant to be a simple refresher for the data structures you should 
+have had hammered into you coming out of your cs14 class. 
+Since you have just finished a quarter of being hammered with data
+ structures against your will and hearing more about them is probably 
+ the last thing you want, I tried to make this extremely simple to
+  work more as a reminder these exist. 
+But it is important to remember that they exist for a purpose and if
+ you ignore their existence because you are fed up with them, you'll 
+ regret it like I did. Hence this simple refresher of a few data 
+ structures you might find useful.  
 
 Many of these data structures exist in the boost library and I would highly 
-reccomend getting used to some of the boost features. Boost has some 
+recommend getting used to some of the boost features. Boost has some 
 rather obscure data structures that might be exactly what you need one day. 
 The only reason this tutorial does not cater to the BOOST library is that 
 only a few of the boost packages are installed automatically on linux and 
