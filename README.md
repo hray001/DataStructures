@@ -84,7 +84,7 @@ The default linked list is a doubly linked list (it contains pointers to the pre
 
 (First In Last Out)
 
-Stacks are interesting in that they only deal with the top of the structure. You either push to the top or pop off the top. A good example of an easy stack implementation is using it to reverse something. When you push, say a set of strings, to the stack after popping all of the elements off of the stack, the sentence of strings would be in reverse.
+Stacks are interesting in that access involves only the topmost element. You either push to the top or pop off the top. One way to use a stack is to use it to reverse the order of something. When you push, say a set of strings, to the stack after popping all of the elements off of the stack, the sentence of strings would be in reverse.
 
 ```
 #include <stack>
@@ -96,12 +96,11 @@ int main(){
     for(i = 0; i < 10; ++i) rev.push(i);
         i = 0; 
     while(!rev.empty()){
-        arr[i] = rev.top(); //just to show the order the items come off the stack
+        arr[i] = rev.top(); //just to show the FILO property
         rev.pop();
         ++i;
     }
-//can then do something with your reversed items, or you could have 
-//done something with them immediately as you popped them off the top
+
     return 0;
 }
 ```
@@ -153,6 +152,7 @@ int main(){          //an out of bounds item
 ```
 
 However, vectors can be overused when you rely on them too heavily. For example, I have been in the situation where I thought I needed a `vector<vector<string> >`. What I really wanted to do, however, was map `int` values to said `vector<string>`. Getting too caught up with vectors, I confused myself and overcomplicated things by trying to force something simple into something complex. Simple solutions should be preferred over complex solutions.
+
 
 
 
