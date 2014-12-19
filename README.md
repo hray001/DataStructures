@@ -29,7 +29,7 @@ Many of these data structures exist in the Boost library and I would highly reco
 
 ####TL;DR
 
-*Maps are REALLY useful and your professor will attest to their use. Stacks and Queues are less common, but in certain situations they can make your job immensely easier and, therefore, reign supreme. Yes, lists can be a pain to deal with if you hate pointers, but if you get comfortable with using pointers and the rules associated with them, you will find lists can be useful as well. Do not rely only on arrays and vectors just because you're used to them; sometimes they aren't the answer you're looking for. And yes, you will use data structures in your life beyond schooling: *
+*Maps are REALLY useful and your professor will attest to their use. Stacks and Queues are less common, but in certain situations they can make your job immensely easier and, therefore, reign supreme. Yes, lists can be a pain to deal with if you hate pointers, but if you get comfortable with using pointers and the rules associated with them, you will find lists can be useful as well. Do not rely only on arrays and vectors just because you're used to them; sometimes they aren't the answer you're looking for. And yes, you will use data structures in your life beyond schooling:*
 [Use of data structures in your life?](http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
 
 ### Map
