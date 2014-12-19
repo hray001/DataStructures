@@ -29,8 +29,8 @@ Many of these data structures exist in the Boost library and I would highly reco
 
 ####TL;DR
 
-*Maps are REALLY useful and your professor will attest to their use. Stacks and Queues are less common, but in certain situations they can make your job immensely easier and, therefore, reign supreme. Yes, lists can be a pain to deal with if you hate pointers, but if you get comfortable with using pointers and the rules associated with them, you will find lists can be useful as well. Do not rely only on arrays and vectors just because you're used to them; sometimes they aren't the answer you're looking for. And yes, you will use data structures in your life beyond schooling:*
-[Use of data structures in your life?](http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
+*Maps are REALLY useful and your professor will attest to their use. Stacks and Queues are less common, but in certain situations they can make your job immensely easier and, therefore, reign supreme. Yes, lists can be a pain to deal with if you hate pointers, but if you get comfortable with using pointers and the rules associated with them, you will find lists can be useful as well. Do not rely only on arrays and vectors just because you're used to them; sometimes they aren't the answer you're looking for. And yes, you will use data structures in your life beyond schooling:* 
+ [Use of data structures in your life?](http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
 
 ### Map
 
@@ -42,11 +42,11 @@ A map is a container filled with Pairs made out of a Key, used to reference/retr
 #include <map>
 using namespace std;
 int main(){
-    map<int, string> m;     //There is a more thorough example for maps 
-    m[1] = "Shawn Lee";   //in the map directory, this just covers basic
-    m[2] = "Andy Luu";    //implementation
+    map<int, string> m;    
+    m[1] = "Shawn Lee";   
+    m[2] = "Andy Luu";   
     m[3] = "Jan Sto. Domingo";
-    /*There is a more thorough example for maps in the map director, this 
+    /*There is a more thorough example for maps in the map directory, this 
         just shows basic usage. */ 
     for(map<int, string>::iterator it = m.begin(); it != m.end(); ++it)
         cout << "Key: " << it->first << " Data: " << it->second << endl;
@@ -54,7 +54,7 @@ int main(){
 }
 ```
 
-That's a pretty boring idea as there is nothing actually DONE with the information, but it at least shows the basic implementation.
+That's a pretty boring idea as there is nothing actually DONE with the information, but it at least shows assignment and access of data.
 
 Now maps, by default, are ordered. There also exists the unordered version which has a faster access time if the key is known. Unordered maps are implemented through the use of hash tables to allow said fast access time. Creating your own `hash<Key>` function is also allowed if you so desire. The interesting part of unordered maps is that they implement the bucket style hash table where each hashed value is allowed to contain more than one piece of data.
 
