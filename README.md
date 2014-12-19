@@ -22,12 +22,12 @@ If you are searching for a specific data structure or algorithm to suit your nee
  There also exist some lesser known data structures that might interest you: 
 [Interesting lesser known data structures](http://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures?rq=1).
 
-Within this folder there exists folders that include examples of basic usage for the covered data structures. If you would like to see more about Trees and Hash functions which are used in the Map and Priority_Queue classes respectively: 
+Within this folder there exists folders including examples of basic usage for the covered data structures. If you would like to see more about Trees and Hash functions which are used in the Map and Priority_Queue classes respectively: 
 [Nice basic tutorial, solid example programs included](http://www.cs.fsu.edu/~jestes/cop3330/notes/datastruct.html). Scroll down to the textbook examples section and there are examples of Trees and Hash functions.
 
 Many of these data structures exist in the Boost library and I would highly recommend getting used to some of the Boost features. Boost has some rather obscure data structures that might be exactly what you need one day. If you only have access to the lab computers then you will have to ask systems to install the boost libraries you need as only 10 or so Boost libraries are installed on Linux by default.
 
-#### **TL;DR**
+####TL;DR
 
 *Maps are REALLY useful and your professor will attest to their use. Stacks and Queues are less common, but in certain situations they can make your job immensely easier and, therefore, reign supreme. Yes, lists can be a pain to deal with if you hate pointers, but if you get comfortable with using pointers and the rules associated with them, you will find lists can be useful as well. Do not rely only on arrays and vectors just because you're used to them; sometimes they aren't the answer you're looking for. And yes, you will use data structures in your life beyond schooling: *
 [Use of data structures in your life?](http://stackoverflow.com/questions/389216/advanced-data-structures-in-practice)
