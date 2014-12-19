@@ -84,7 +84,7 @@ The default linked list is a doubly linked list (it contains pointers to the pre
 
 (First In Last Out)
 
-Stacks are interesting in that access involves only the topmost element. You either push to the top or pop off the top. One way to use a stack is to use it to reverse the order of something. When you push, say a set of strings, to the stack after popping all of the elements off of the stack, the sentence of strings would be in reverse.
+Stacks are interesting in that access involves only the topmost element. Either you push to the top or pop off the top. One way to use a stack is to use it to reverse the order of something. When you push, say a set of strings, to the stack after popping all of the elements off of the stack, the sentence of strings would be in reverse.
 
 ```
 #include <stack>
